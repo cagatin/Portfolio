@@ -1,9 +1,10 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+const path = require('path');
 
 // importing connection and routes files
-import db from './config/connection';
-import routes from './routes';
+const db = require('./config/connection');
+const routes = require('./routes');
 
 const PORT = process.env.PORT || 3001;
 const app = express();

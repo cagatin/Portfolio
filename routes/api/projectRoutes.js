@@ -1,4 +1,4 @@
-import { getAllProjects, getSingleProject, createProject, deleteProject } from '../../controllers/projectController';
+const { getAllProjects, getSingleProject, createProject, deleteProject } = require('../../controllers/projectController');
 const router = require('express').Router();
 
 // api/projects

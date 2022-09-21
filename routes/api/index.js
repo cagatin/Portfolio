@@ -1,5 +1,5 @@
 const router = require('express').Router();
-import projectRoutes from './projectRoutes';
+const projectRoutes = require('./projectRoutes');
 
 router.use('/project', projectRoutes);
 
