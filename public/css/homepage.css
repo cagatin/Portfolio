@@ -1,10 +1,16 @@
 section {
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+.section-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/* Hero Section Styling */
 #hero-container-section {
     position: relative;
     display: flex;
@@ -16,14 +22,15 @@ section {
     content: "";
     position: absolute;
     background-image: url('/images/grad_hero.jpg');
-    background-position: 75%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .typewriter h1 {
@@ -32,15 +39,33 @@ section {
     color: black;
     text-align: center;
     overflow: hidden;
-    border-right: .17em solid black;
-    font-weight: bold;
+    border-right: .1em solid black;
+    font-weight: bolder;
     white-space: nowrap;
-    font-size: 3rem;
+    font-size: 5rem;
     width: 0;
     animation:
-        typing 2s steps(40) forwards,
+        typing 2.5s steps(40) forwards,
         blink 1.2s infinite;
 }
+
+/* About Section Styling */
+#home-about-section {
+    background-color: #000;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Skills section styling */
+#home-skills-section {
+    background-color: #e5e5e5;
+}
+
 
 @keyframes typing {
     from {
