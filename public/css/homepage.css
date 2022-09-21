@@ -1,16 +1,26 @@
-#hero-container-section {
-    display: inline-block;
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.typewriter {
+#hero-container-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typewriter h1 {
+    text-align: center;
     overflow: hidden;
     border-right: .08em solid black;
     white-space: nowrap;
-    font-size: 1.6rem;
+    font-size: 2rem;
     width: 0;
     animation:
-        typing 1.2s steps(20) forwards,
-        blink 0.9s infinite;
+        typing 1.5s steps(40) forwards,
+        blink 1.2s infinite;
 }
 
 @keyframes typing {
