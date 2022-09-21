@@ -17,7 +17,7 @@ const getAllProjects = async function (req, res) {
 // Retrieve single project based on _id route parameter
 const getSingleProject = async function (req, res) {
     try {
-        const projectData = await Project.findById(req.params.id);
+        const projectData = await Project.findById(req.params.projectId);
         if (!projectData) {
             res.status(404).json({ message: "No project exists with that ID" });
         }
@@ -54,7 +54,7 @@ const createProject = async function (req, res) {
 // Delete a project from the database based on _id route parameter passed
 const deleteProject = async function (req, res) {
     try {
-        const projectData = await Project.findByIdAndDelete(req.params.id);
+        const projectData = await Project.findByIdAndDelete(req.params.projectId);
         if (!projectData) {
             res.status(404).json({ message: `Could not delete the project with the ID of ${req.params.id}` });
         }
