@@ -6,17 +6,36 @@ section {
 }
 
 #hero-container-section {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#hero-container-section::before {
+    content: "";
+    position: absolute;
+    background-image: url('/images/grad_hero.jpg');
+    background-position: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
 .typewriter h1 {
+    padding-bottom: 1%;
+    position: relative;
+    color: black;
     text-align: center;
     overflow: hidden;
     border-right: .08em solid black;
+    font-weight: bold;
     white-space: nowrap;
-    font-size: 2rem;
+    font-size: 3rem;
     width: 0;
     animation:
         typing 1.5s steps(40) forwards,
