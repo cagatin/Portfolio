@@ -11,5 +11,4 @@ router.route('/:projectId')
     .get(getSingleProject)
     .delete(deleteProject);
 
-
 module.exports = router;
