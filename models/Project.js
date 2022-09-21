@@ -13,6 +13,9 @@ const projectSchema = new mongoose.Schema(
         githubUrl: {
             type: String,
             required: true
+        },
+        deployedUrl: {
+            type: String
         }
     }
 )

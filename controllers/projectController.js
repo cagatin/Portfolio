@@ -27,3 +27,23 @@ const getSingleProject = async function (req, res) {
         res.status(500).json(err);
     }
 }
+
+// Adds project to the Database
+const createProject = async function (req, res) {
+    try {
+        // Data will be passed as so:
+        /*
+        {
+
+        }
+        */
+    }
+    catch (err) {
+        res.status(500).json(err);
+    }
+}
+
+module.exports = {
+    getAllProjects,
+    getSingleProject,
+}
