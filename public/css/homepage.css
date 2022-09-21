@@ -1,0 +1,35 @@
+#hero-container-section {
+    display: inline-block;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: .08em solid black;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation:
+        typing 1.2s steps(20) forwards,
+        blink 0.9s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+
+    from {
+        border-color: transparent
+    }
+
+    to {
+        border-color: black;
+    }
+}
