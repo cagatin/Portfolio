@@ -8,7 +8,7 @@ section {
 }
 
 .section-title {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 4%;
@@ -47,7 +47,7 @@ section {
     border-right: .1em solid black;
     font-weight: bolder;
     white-space: nowrap;
-    font-size: 5rem;
+    font-size: 6rem;
     width: 0;
     animation:
         typing 2.5s steps(40) forwards,
@@ -74,7 +74,7 @@ section {
 
 /* Styles for skill icon container */
 .skill-section-title {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
     text-decoration: 2px underline black;
     text-underline-offset: 5%;
