@@ -71,6 +71,28 @@ section {
     color: black;
 }
 
+/* Styles for skill icon container */
+.skills-section-title {}
+
+#skills-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-icons img {
+    height: 45px;
+    width: 45px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.skills-sub-container {
+    margin-bottom: 2%;
+}
+
+/* Styles for web dev skills */
+
 /* Project Section Styling */
 #home-projects-section {
     background-color: var(--switch1-theme);
