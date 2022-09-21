@@ -34,9 +34,31 @@ const createProject = async function (req, res) {
         // Data will be passed as so:
         /*
         {
-
+            title: "Project Title",
+            description: "Some project description",
+            githubUrl: "https://github.com/cagatin/Social-Network-API",
+            deployedUrl: "somedeployedURl.com"
         }
         */
+        const projectData = await Project.create(req.body);
+        if (!projectData) {
+            res.status(404).json({ message: "Error in creating new project" });
+        }
+        res.status(200).json(projectData);
+    }
+    catch (err) {
+        res.status(500).json(err);
+    }
+}
+
+// Delete a project from the database based on _id route parameter passed
+const deleteProject = async function (req, res) {
+    try {
+        const projectData = await Project.findByIdAndDelete(req.params.id);
+        if (!projectData) {
+            res.status(404).json({ message: `Could not delete the project with the ID of ${req.params.id}` });
+        }
+        res.status(200).json(projectData);
     }
     catch (err) {
         res.status(500).json(err);
@@ -46,4 +68,6 @@ const createProject = async function (req, res) {
 module.exports = {
     getAllProjects,
     getSingleProject,
+    createProject,
+    deleteProject
 }
