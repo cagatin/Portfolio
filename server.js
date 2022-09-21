@@ -23,7 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));        //serve static f
 // Routes
 app.use(routes);
 
-
 app.listen(PORT, () => {
-    console.log(`API server running on port ${PORT}!`);
+    console.log(`Server running on port ${PORT}!`);
 });
