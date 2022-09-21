@@ -32,13 +32,13 @@ section {
     color: black;
     text-align: center;
     overflow: hidden;
-    border-right: .08em solid black;
+    border-right: .17em solid black;
     font-weight: bold;
     white-space: nowrap;
     font-size: 3rem;
     width: 0;
     animation:
-        typing 1.5s steps(40) forwards,
+        typing 2s steps(40) forwards,
         blink 1.2s infinite;
 }
 
