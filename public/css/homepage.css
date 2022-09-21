@@ -1,6 +1,6 @@
 :root {
     --switch1-theme: #000;
-    --switch2-theme: ##e5e5e5;
+    --switch2-theme: #fff;
 }
 
 section {
@@ -56,27 +56,27 @@ section {
 
 /* About Section Styling */
 #home-about-section {
-    background-color: var(--switch1-theme);
+    background-color: var(--switch2-theme);
 }
 
 #about-title {
-    color: #fff;
+    color: #000;
 }
 
 /* Skills Section Styling */
 #home-skills-section {
-    background-color: var(--switch2-theme);
+    background-color: var(--switch1-theme);
 }
 
 #skills-title {
-    color: black;
+    color: #ffbe0b;
 }
 
 /* Styles for skill icon container */
 .skill-section-title {
+    color: #ffbe0b;
     font-size: 3em;
     font-weight: bold;
-    text-decoration: 2px underline black;
     text-underline-offset: 5%;
 }
 
@@ -101,11 +101,24 @@ section {
 
 /* Project Section Styling */
 #home-projects-section {
-    background-color: var(--switch1-theme);
+    background-color: var(--switch2-theme);
 }
 
 #projects-title {
-    color: #fff;
+    color: #000;
+}
+
+/* Styles to control reveal on scroll */
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 @keyframes typing {
