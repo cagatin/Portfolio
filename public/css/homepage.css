@@ -68,7 +68,12 @@ section {
 .about-text {
     font-size: 1.3em;
     color: black;
-    text-align: center;
+    text-align: justify;
+}
+
+#roles-text {
+
+    text-align: center !important;
 }
 
 .name {
