@@ -26,7 +26,7 @@ section {
 #hero-container-section::before {
     content: "";
     position: absolute;
-    background-image: url('/images/smiling.JPG');
+    background-image: url('/images/smiling2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
