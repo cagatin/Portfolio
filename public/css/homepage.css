@@ -149,6 +149,14 @@ section {
 }
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
+    #desktop-title {
+        display: none !important;
+    }
+
+    #mobile-title {
+        display: block;
+    }
+
     .section-title {
         font-size: 1.5em;
     }
@@ -177,4 +185,10 @@ section {
         gap: 20% !important;
     }
 
+}
+
+@media screen and (min-width: 600px) {
+    #mobile-title {
+        display: none;
+    }
 }
