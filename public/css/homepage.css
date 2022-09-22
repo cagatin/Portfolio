@@ -26,16 +26,16 @@ section {
 #hero-container-section::before {
     content: "";
     position: absolute;
-    background-image: url('/images/grad_hero.jpg');
+    background-image: url('/images/smiling.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center 35%;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.4;
+    opacity: 0.75;
 }
 
 .typewriter h1 {
@@ -149,14 +149,6 @@ section {
 }
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
-    #desktop-title {
-        display: none !important;
-    }
-
-    #mobile-title {
-        display: block;
-    }
-
     .section-title {
         font-size: 2em;
     }
@@ -184,12 +176,6 @@ section {
         display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 20% !important;
-    }
-
-    #hero-container-section::before {
-        background-image: url('/images/smiling.JPG');
-        background-attachment: scroll;
-        opacity: 0.7;
     }
 }
 
