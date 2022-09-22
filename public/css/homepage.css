@@ -187,7 +187,9 @@ section {
     }
 
     #hero-container-section::before {
+        background-image: url('/images/smiling.JPG');
         background-attachment: scroll;
+        opacity: 0.7;
     }
 }
 
