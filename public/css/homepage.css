@@ -1,6 +1,8 @@
 :root {
     --switch1-theme: #000;
     --switch2-theme: #fff;
+    --theme-color: #f5cb5c;
+    --text-theme: #0d3b66;
 }
 
 section {
@@ -63,10 +65,23 @@ section {
     color: #000;
 }
 
-#about-text {
-    font-size: 1.5em;
+.about-text {
+    font-size: 1.3em;
     color: black;
     text-align: center;
+}
+
+.name {
+    color: var(--theme-color);
+    font-weight: bolder;
+}
+
+.section-name {
+    color: black;
+    font-weight: bolder;
+    display: block;
+    font-size: 2em;
+    margin-bottom: 1%;
 }
 
 /* Skills Section Styling */
@@ -75,12 +90,12 @@ section {
 }
 
 #skills-title {
-    color: #ffbe0b;
+    color: var(--theme-color);
 }
 
 /* Styles for skill icon container */
 .skill-section-title {
-    color: #ffbe0b;
+    color: var(--theme-color);
     margin-bottom: 4%;
     font-size: 2.7em;
     font-weight: bold;
@@ -161,7 +176,7 @@ section {
         font-size: 2.3em;
     }
 
-    #about-text {
+    .about-text {
         font-size: 1.2em;
         line-height: 1.3;
     }
