@@ -153,10 +153,6 @@ section {
         display: none;
     }
 
-    #mobile-title {
-        display: block;
-    }
-
     .section-title {
         font-size: 2em;
     }
@@ -190,10 +186,8 @@ section {
     #hero-container-section::before {
         background-attachment: scroll;
     }
-}
 
-@media screen and (min-width: 600px) {
-    #mobile-title {
-        display: none;
+    .reveal {
+        transition: all 1.5s ease;
     }
 }
