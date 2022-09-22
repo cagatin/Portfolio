@@ -162,15 +162,15 @@ section {
     }
 
     .typewriter h1 {
-        font-size: 2em;
+        font-size: 2.3em;
     }
 
     #about-text {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .skill-section-title {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .skills-icons img {
@@ -185,6 +185,9 @@ section {
         gap: 20% !important;
     }
 
+    #hero-container-section::before {
+        background-attachment: scroll;
+    }
 }
 
 @media screen and (min-width: 600px) {
