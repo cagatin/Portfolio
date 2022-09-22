@@ -149,6 +149,14 @@ section {
 }
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
+    #desktop-title {
+        display: none;
+    }
+
+    #mobile-title {
+        display: block;
+    }
+
     .section-title {
         font-size: 2em;
     }
@@ -176,6 +184,11 @@ section {
         display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 20% !important;
+    }
+
+
+    #hero-container-section::before {
+        background-attachment: scroll;
     }
 }
 
