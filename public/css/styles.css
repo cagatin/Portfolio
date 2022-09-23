@@ -9,7 +9,7 @@ body {
     --text-theme: #14213d;
 }
 
-section {
+.main-section {
     min-height: 100vh;
 }
 
@@ -137,6 +137,11 @@ section {
 
 #projects-title {
     color: #000;
+}
+
+.project-image {
+    height: 400px;
+    width: 100%;
 }
 
 /* Styles to control reveal on scroll */

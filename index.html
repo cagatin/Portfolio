@@ -23,12 +23,13 @@
 </head>
 
 <body>
-    <section id="hero-container-section">
+    <section id="hero-container-section" class="main-section">
         <div id="hero-container" class="typewriter">
             <h1 id="desktop-title">Felix Cagatin. Web Developer.</h1>
         </div>
     </section>
-    <section id="home-about-section" class="reveal  d-flex flex-column justify-content-center alight-items-center">
+    <section id="home-about-section"
+        class="main-section reveal  d-flex flex-column justify-content-center align-items-center">
         <div class="container">
             <h2 class="pt-5 text-center section-title" id="about-title">About Me</h2>
             <p class="about-text">
@@ -84,7 +85,7 @@
             </p>
         </div>
     </section>
-    <section id="home-skills-section" class="reveal">
+    <section id="home-skills-section" class="reveal main-section">
         <div class="container">
             <h2 class="pt-5 text-center section-title" id="skills-title">technologies</h2>
             <div id="skills-icon-wrapper" class="d-flex flex-column">
@@ -148,21 +149,65 @@
             </div>
         </div>
     </section>
-    <section id="home-projects-section" class="reveal">
+    <section id="home-projects-section" class="reveal main-section">
         <div class="container">
             <h2 class="pt-5 text-center section-title" id="projects-title">Projects</h2>
+            <section class="container-fluid px-0 py-5 reveal" id="fatbird-project-container">
+                <div class="row align-items-center">
+                    <div class="project-info-container col-lg-6 col-sm-12 text-center">
+                        <h2 class="project-title">Fat-Birds Wing Bar Full Stack Website</h2>
+                        <p class="lead project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Pariatur
+                            dolore nam
+                            libero doloremque
+                            blanditiis ipsum, deleniti laboriosam ipsa. Nisi dolores, modi iure expedita dicta adipisci
+                            vel
+                            nesciunt architecto! Doloremque, explicabo?</p>
+                    </div>
+                    <div class="project-image-container col-lg-6 col-sm-12">
+                        <img src="./public/images/fatbirds.gif" class="project-image" id="fatbirds-project-image"
+                            alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid px-0 py-5 reveal" id="fatbird-project-container">
+                <div class="row align-items-center">
+                    <div class="project-image-container col-lg-6 col-sm-12 order-2 order-md-2 order-lg-1">
+                        <img src="./public/images/roadtrip.gif" class="project-image" id="fatbirds-project-image"
+                            alt="">
+                    </div>
+                    <div class="project-info-container col-lg-6 col-sm-12 text-center order-1 order-md-1 order-lg-2">
+                        <h2 class="project-title pt-2">Are We There Yet? Road Trip Helper</h2>
+                        <p class="project-description lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Pariatur
+                            dolore nam
+                            libero doloremque
+                            blanditiis ipsum, deleniti laboriosam ipsa. Nisi dolores, modi iure expedita dicta adipisci
+                            vel
+                            nesciunt architecto! Doloremque, explicabo?</p>
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid px-0 py-5 reveal" id="fatbird-project-container">
+                <div class="row align-items-center">
+                    <div class="project-info-container col-lg-6 text-center">
+                        <h2 class="project-title">Fat-Birds Wing Bar Full Stack Website</h2>
+                        <p class="lead project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Pariatur
+                            dolore nam
+                            libero doloremque
+                            blanditiis ipsum, deleniti laboriosam ipsa. Nisi dolores, modi iure expedita dicta adipisci
+                            vel
+                            nesciunt architecto! Doloremque, explicabo?</p>
+                    </div>
+                    <div class="project-image-container col-lg-6">
+                        <img src="./public/images/fatbirds.gif" class="project-image" id="fatbirds-project-image"
+                            alt="">
+                    </div>
+                </div>
+            </section>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
 
     <!-- MDB -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
