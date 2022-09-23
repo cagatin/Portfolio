@@ -1,3 +1,226 @@
 body {
     font-family: 'Roboto Flex', sans-serif;
 }
+
+:root {
+    --switch1-theme: #000;
+    --switch2-theme: #fff;
+    --theme-color: #f5cb5c;
+    --text-theme: #14213d;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.section-title {
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 4%;
+}
+
+
+/* Hero Section Styling */
+#hero-container-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-container-section::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/smiling2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 35%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.typewriter h1 {
+    padding-bottom: 1%;
+    position: relative;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    border-right: .1em solid black;
+    font-weight: bolder;
+    white-space: nowrap;
+    font-size: 6rem;
+    width: 0;
+    animation:
+        typing 2.5s steps(40) forwards,
+        blink 1.2s infinite;
+}
+
+/* About Section Styling */
+#home-about-section {
+    background-color: var(--switch2-theme);
+}
+
+#about-title {
+    color: #000;
+}
+
+.about-text {
+    font-size: 1.3em;
+    color: black;
+    text-align: justify;
+}
+
+#roles-text {
+
+    text-align: center !important;
+}
+
+.name {
+    color: var(--text-theme);
+    font-weight: bolder;
+}
+
+.section-name {
+    color: black;
+    font-weight: bolder;
+    display: block;
+    font-size: 2em;
+    margin-bottom: 1%;
+}
+
+/* Skills Section Styling */
+#home-skills-section {
+    background-color: var(--switch1-theme);
+}
+
+#skills-title {
+    color: var(--theme-color);
+}
+
+/* Styles for skill icon container */
+.skill-section-title {
+    color: var(--theme-color);
+    margin-bottom: 4%;
+    font-size: 2.7em;
+    font-weight: bold;
+    text-underline-offset: 5%;
+}
+
+#skills-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-icons img {
+    height: 45px;
+    width: 45px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.skills-sub-container {
+    margin-bottom: 5%;
+}
+
+/* Styles for web dev skills */
+
+/* Project Section Styling */
+#home-projects-section {
+    background-color: var(--switch2-theme);
+}
+
+#projects-title {
+    color: #000;
+}
+
+/* Styles to control reveal on scroll */
+.reveal {
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 1.8s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent
+    }
+
+    to {
+        border-color: black;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    #desktop-title {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .typewriter h1 {
+        font-size: 2.3em;
+    }
+
+    .about-text {
+        font-size: 1.2em;
+        line-height: 1.7;
+    }
+
+    .skill-section-title {
+        font-size: 1.8em;
+    }
+
+    .skills-icons img {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 2%;
+    }
+
+    #skills-icon-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20% !important;
+    }
+
+
+    #hero-container-section::before {
+        background-attachment: scroll;
+        opacity: 1;
+    }
+
+    .reveal {
+        transition: all 1.2s ease;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+    .typewriter h1,
+    .section-title {
+        font-size: 3rem;
+    }
+}
