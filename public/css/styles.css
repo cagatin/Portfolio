@@ -20,6 +20,20 @@ body {
     margin-bottom: 4%;
 }
 
+/* Navbar styles */
+.navbar {
+    background-color: #000;
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bolder !important;
+    font-size: 130%;
+}
 
 /* Hero Section Styling */
 #hero-container-section {
