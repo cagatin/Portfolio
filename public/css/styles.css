@@ -164,6 +164,11 @@ body {
     font-size: 150%;
 }
 
+.socials-icon {
+    height: 80px;
+    width: 80px;
+}
+
 /* Styles to control reveal on scroll */
 .reveal {
     position: relative;
