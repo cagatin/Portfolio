@@ -259,6 +259,11 @@ body {
     .reveal {
         transition: all 1.2s ease;
     }
+
+    #email-section {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
