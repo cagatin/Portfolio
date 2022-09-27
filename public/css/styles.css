@@ -25,8 +25,8 @@ body {
     background-color: #000;
 }
 
-.navbar-toggler-icon {
-    color: white !important;
+.navbar-toggler {
+    background-color: white !important;
 }
 
 .nav-link {
