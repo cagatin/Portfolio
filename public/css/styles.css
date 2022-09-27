@@ -139,10 +139,30 @@ body {
     color: #000;
 }
 
-/* .project-image {
-    height: 400px;
-    width: 100%;
-} */
+/* Styles for Contact Section */
+#home-contact-section {
+    background-color: var(--switch1-theme);
+    color: var(--theme-color);
+}
+
+/* Styles for email section */
+#email-section {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#email-section h3 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#email-section textarea {
+    height: 150px;
+}
+
+.form-group label {
+    font-size: 150%;
+}
 
 /* Styles to control reveal on scroll */
 .reveal {
