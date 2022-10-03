@@ -83,6 +83,37 @@ body {
     color: #000;
 }
 
+#about-me-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about-img-container {
+    display: flex;
+    background-color: var(--theme-color);
+    border-bottom: 100%;
+    border-radius: 100%;
+    margin: 5% 5%;
+    overflow: hidden;
+    transform: scale(0.9);
+    box-shadow: 0 1em 3em -1em var(--theme-color);
+}
+
+#about-img {
+    position: relative;
+    top: 7%;
+    left: 4.5%;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.2);
+}
+
+#about-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-text {
     font-size: 1.3em;
     color: black;
@@ -90,8 +121,12 @@ body {
 }
 
 #roles-text {
-
+    color: white;
     text-align: center !important;
+}
+
+.role-span {
+    color: var(--theme-color);
 }
 
 .name {
